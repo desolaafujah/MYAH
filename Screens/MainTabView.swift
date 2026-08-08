@@ -16,23 +16,29 @@ struct MainTabView: View {
                         Text("Home")
                     } icon: {
                         Image("HomeBrewIcon")
-                            .renderingMode(.template)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 2, height: 2)
+                            .renderingMode(.original)
                     }
                 }
 
             DiscoverView()
                 .tabItem {
-                    Label("Discover", systemImage: "magnifyingglass")
+                    Label{
+                        Text("Discover")
+                    } icon: {
+                        Image("DiscoverIcon")
+                            .renderingMode(.original)
+                    }
                 }
-
+                    
             SavedView()
                 .tabItem {
-                    Label("Saved", systemImage: "bookmark")
+                    Label{
+                        Text("SipStream")
+                    } icon: {
+                        Image("SipStreamIcon")
+                            .renderingMode(.original)
+                    }
                 }
-
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
