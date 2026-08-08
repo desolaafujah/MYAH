@@ -30,7 +30,7 @@ struct MainTabView: View {
                     }
                 }
                     
-            SavedView()
+            SipStreamView()
                 .tabItem {
                     Label{
                         Text("SipStream")
